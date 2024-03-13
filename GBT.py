@@ -28,11 +28,11 @@ predictions_R = modelR.predict(X_test)
 predictions_C = modelC.predict(X_test)
 
 # For classification
-accuracy = accuracy_score(y_test, predictions_C)
+accuracy = accuracy_score(Y_test, predictions_C)
 print(f"Accuracy: {accuracy}")
 
 # For regression
-mse = mean_squared_error(y_test, predictions_R)
+mse = mean_squared_error(Y_test, predictions_R)
 print(f"Mean Squared Error: {mse}")
 
 
