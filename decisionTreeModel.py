@@ -26,3 +26,11 @@ df.drop(['category', 'trans_date_trans_time'], axis = 1, inplace = True)
 # Drop unnecessary columns:
 df.drop(df.columns[0], axis = 1, inplace = True)
 dropCols = ['cc_num', 'first', 'last', 'gender', 'street', 'city', 'state', 'zip', 'job', 'dob', 'trans_num']
+
+# Since we have 2 separate files, one for testing and one for 
+# training, we do not have to split the file into train and test
+
+# ----- TRAINING MODEL -----
+# In progress:
+# X_train = df.drop('is_fraud', axis = 1)
+# Y_train = df['is_fraud']
