@@ -5,3 +5,7 @@ ML Models
 - XGboost
 - Gradient Boosted Trees
 - Perceptrons
+
+Test/Train Data:
+https://www.kaggle.com/datasets/kartik2112/fraud-detection?resource=download 
+
