@@ -1,10 +1,13 @@
 import pandas as pd
 
+
 df = pd.read_csv('./archive/fraudTrain_simple.csv')
 
 # This line was uncommented because fraudTrain.csv is too big, fraudTrain_simple.csv is being used in the mean time
 # df = pd.read_csv('./archive/fraudTrain.csv')
 
+# Preprocessing the dataset
+# trans_date_trans_time needs to be broken down:
 df['trans_date_trans_time'] = pd.to_datetime(df['trans_date_trans_time'], format = '%m/%d/%y %H:%M')
 
 df['hour'] = df['trans_date_trans_time'].dt.hour
